@@ -1,0 +1,12 @@
+{
+    "RoslynExtensionsOptions": {
+        "EnableAnalyzersSupport": true,
+        "enableDecompilationSupport": true,
+        "LocationPaths": [
+            "/Users/koen/.vscode/extensions/josefpihrt-vscode.roslynator-4.12.2/roslyn/common",
+            "/Users/koen/.vscode/extensions/josefpihrt-vscode.roslynator-4.12.2/roslyn/analyzers",
+            "/Users/koen/.vscode/extensions/josefpihrt-vscode.roslynator-4.12.2/roslyn/refactorings",
+            "/Users/koen/.vscode/extensions/josefpihrt-vscode.roslynator-4.12.2/roslyn/fixes"
+        ]
+    }
+}
