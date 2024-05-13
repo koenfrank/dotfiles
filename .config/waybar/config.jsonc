@@ -1,7 +1,7 @@
 {
   // "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 30, // Waybar height (to be removed for auto height)
+  // "height": 30, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
@@ -24,22 +24,22 @@
     "memory",
     "temperature",
     //"backlight",
-    "keyboard-state",
-    "hyprland/language",
+    //"keyboard-state",
+    //"hyprland/language",
     //"battery",
     //"battery#bat2",
     "clock",
     "tray"
   ],
   "hyprland/workspaces": {
-    "format": "<sub>{icon}</sub>{windows} -",
+    "format": "<sub>{icon}</sub><sub>{windows}</sub>",
     "format-window-separator": " - ",
     "window-rewrite-default": "",
     "window-rewrite": {
       "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
       "class<firefox>": "", // Windows whose classes are "firefox"
       "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
-      "foot": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+      "class<kitty>": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
       "code": "󰨞"
     }
   },
@@ -52,10 +52,10 @@
       "unlocked": ""
     }
   },
-  "sway/mode": {
+  "hyprland/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
-  "sway/scratchpad": {
+  "hyprland/scratchpad": {
     "format": "{icon} {count}",
     "show-empty": false,
     "format-icons": [
