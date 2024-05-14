@@ -3,3 +3,5 @@
 -- Add any additional options here
 --vim.cmd("language en_US")
 vim.cmd("let g:OmniSharp_popup = 1")
+vim.opt.clipboard = "unnamedplus"
+vim.opt.relativenumber = false
