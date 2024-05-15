@@ -1,10 +1,5 @@
 return {
   {
-    "Cliffback/netcoredbg-macOS-arm64.nvim",
-    dependencies = { "mfussenegger/nvim-dap" },
-  },
-
-  {
     "mfussenegger/nvim-dap",
     optional = true,
     opts = function()
