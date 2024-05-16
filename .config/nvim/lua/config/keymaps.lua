@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 
 local map = vim.keymap.set
-
+vim.keymap.set("n", "<Leader>cG", "<Plug>(doge-generate)")
 -- Move to window using the <ctrl> hjkl keys
 -- map("n", "<C-k>", "<C-w>y", { desc = "Go to Left Window", remap = true })
 -- map("n", "<C-j>", "<C-w>u", { desc = "Go to Lower Window", remap = true })
