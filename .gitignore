@@ -1,13 +1,21 @@
 # Ignore everything by default
 *
-
+!.config/
+!.config/nvim
 !.config/nvim/*
+!.config/hypr
 !.config/hypr/*
+!.config/kitty/
 !.config/kitty/*
+!.config/spotify-player
 !.config/spotify-player/*
+!.config/waybar
 !.config/waybar/*
+!.config/wofi
 !.config/wofi/*
+!.config/dunst
 !.config/dunst/*
 !.bashrc
+.omnisharp
 !.omnisharp/*
 !.tmux.config
