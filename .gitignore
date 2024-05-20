@@ -18,4 +18,6 @@
 !.bashrc
 .omnisharp
 !.omnisharp/*
+!.config/qmk/
+!.config/qmk/*
 !.tmux.config
