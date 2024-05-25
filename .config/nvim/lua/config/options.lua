@@ -5,7 +5,4 @@
 vim.cmd("let g:OmniSharp_popup = 1")
 
 -- set for linux
---if not (vim.fn.has("macunix")) then
-vim.opt.clipboard = "unnamedplus"
---end
 vim.opt.relativenumber = false
