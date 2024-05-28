@@ -20,4 +20,6 @@
 !.omnisharp/*
 !.config/qmk/
 !.config/qmk/*
+!.config/ranger
+!.config/ranger/*
 !.tmux.config
