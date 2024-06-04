@@ -22,6 +22,7 @@ return {
             ["textDocument/references"] = require("omnisharp_extended").references_handler,
             ["textDocument/implemenation"] = require("omnisharp_extended").implementation_handler,
           },
+
           keys = {
             {
               "gd",
@@ -55,6 +56,24 @@ return {
           enable_roslyn_analyzers = true,
           organize_imports_on_format = true,
           enable_import_completion = true,
+          enable_navigation = true,
+          enable_code_actions = true,
+          RoslynExtensionsOptions = {
+            InlayHintsOptions = {
+              EnableForParameters = true,
+              ForLiteralParameters = true,
+              ForIndexerParameters = true,
+              ForObjectCreationParameters = true,
+              ForOtherParameters = true,
+              SuppressForParametersThatDifferOnlyBySuffix = false,
+              SuppressForParametersThatMatchMethodIntent = false,
+              SuppressForParametersThatMatchArgumentName = false,
+              EnableForTypes = true,
+              ForImplicitVariableTypes = true,
+              ForLambdaParameterTypes = true,
+              ForImplicitObjectCreatio = true,
+            },
+          },
         },
       },
     },
