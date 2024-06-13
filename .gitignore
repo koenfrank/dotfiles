@@ -3,6 +3,12 @@
 !.config/
 !.config/nvim
 !.config/nvim/*
+!.config/nvim/lua
+!.config/nvim/lua/*
+!.config/nvim/lua/config
+!.config/nvim/lua/config/*
+!.config/nvim/lua/plugins
+!.config/nvim/lua/plugins/*
 !.config/hypr
 !.config/hypr/*
 !.config/kitty/
