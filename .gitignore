@@ -11,10 +11,9 @@
 !.config/nvim/lua/plugins/*
 !.config/hypr
 !.config/hypr/*
+!.config/hypr/config/*
 !.config/kitty/
 !.config/kitty/*
-!.config/spotify-player
-!.config/spotify-player/*
 !.config/waybar
 !.config/waybar/*
 !.config/wofi
@@ -29,3 +28,6 @@
 !.config/ranger
 !.config/ranger/*
 !.tmux.config
+!.config/alacritty/*
+!.config/alacritty/themes/*
+!.config/noctalia/*
