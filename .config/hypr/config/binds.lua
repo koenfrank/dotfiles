@@ -155,11 +155,35 @@ hl.bind(mainMod .. " + CONTROL + Left", hl.dsp.focus({ workspace = "m-1" }))
 hl.bind(mainMod .. " + CONTROL + Down", hl.dsp.focus({ workspace = "emptym" }))
 
 -- Scroll through existing workspaces & monitors
-hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "m-1" }))
-hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "m+1" }))
+hl.bind(mainMod .. " + SHIFT + A", hl.dsp.focus({ workspace = "m-1" }))
+hl.bind(mainMod .. " + SHIFT + D", hl.dsp.focus({ workspace = "m+1" }))
 hl.bind(mainMod .. " + CONTROL + mouse_up", hl.dsp.focus({ workspace = "m-1" }))
 hl.bind(mainMod .. " + CONTROL + mouse_down", hl.dsp.focus({ workspace = "m+1" }))
 
 -- Special workspace (scratchpad)
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special" }))
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special())
+
+hl.bind("SUPER + F10", function()
+	hl.dispatch(hl.dsp.dpms({
+		action = "off",
+		monitor = "DP-8",
+	}))
+
+	hl.dispatch(hl.dsp.dpms({
+		action = "off",
+		monitor = "DP-11",
+	}))
+
+	os.execute("sleep 2")
+
+	hl.dispatch(hl.dsp.dpms({
+		action = "on",
+		monitor = "DP-8",
+	}))
+
+	hl.dispatch(hl.dsp.dpms({
+		action = "on",
+		monitor = "DP-11",
+	}))
+end)
